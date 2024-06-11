@@ -20,7 +20,7 @@ fn main() //-> Result<String, io::Error>
         guessed_word.push('_');
     }
     
-    // std::process::Command::new("clear").status().unwrap();
+    std::process::Command::new("clear").status().unwrap();
     println!("Guess a letter");
     println!("{:?}", guessed_word.iter().map(|x| x.to_string() + " ").collect::<String>());
     loop {
